@@ -1,4 +1,3 @@
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -44,8 +43,7 @@ public class Main {
             if(a > 0){
                 return a/b;
             }else{
-                a = -a;
-                return -a/b;
+                return a/b;
             }
         }
         return 0;
