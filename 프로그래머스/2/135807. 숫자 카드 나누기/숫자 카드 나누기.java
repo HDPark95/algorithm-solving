@@ -25,9 +25,13 @@ class Solution {
         return Math.max(a, b) == 1 ? 0 : Math.max(a, b);
     }
     
-    public static int gcd(int a, int b) {
-        if (b == 0) return a;
-        return gcd(b, a % b);
+    private static int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
     }
     
 }
